@@ -2240,172 +2240,172 @@ pageFooter:
     linux: Linux
 
 pageHeaderEnvironment:
-  namespace: Namespace
+  namespace: 命名空间
 
 projectRow:
-  none: No description
+  none: 没有描述
 
 schema:
   inputBoolean:
-    y: "True"
-    n: "False"
+    y: "正确"
+    n: "错误"
   inputCertificate:
-    prompt: Choose a Certificate...
+    prompt: 选择一个证书...
   inputEnum:
-    option: Choose an option...
+    option: 选择一个选项...
   inputService:
-    prompt: Choose a Service...
+    prompt: 选择一个服务...
 
 saveCancel:
-  saving: Saving...
-  saved: Saved!
-  edit: Save
-  create: Create
-  cancel: Cancel
+  saving: 保存中...
+  saved: 保存完成!
+  edit: 保存
+  create: 创建
+  cancel: 取消
 
 schedulingRuleRow:
-  theHost: The host
-  haveA: have a
-  of: of
+  theHost: 主机
+  haveA: 有一个
+  of: 属于
 
 sidekickAddtlInfo:
-  info: Info
-  image: Image
-  entryPoint: Entrypoint
-  command: Command
-  containers: Containers
-  noContainers: No Containers
-  labels: Labels
-  noLabels: No Labels
+  info: 信息
+  image: 图片
+  entryPoint: 入口处
+  command: 命令
+  containers: 容器
+  noContainers: 无容器
+  labels: 标签
+  noLabels: 无标签
 
 stackSection:
-  outputs: Outputs
-  description: Description
-  none: No Services
+  outputs: 输出
+  description: 描述
+  none: 无服务
   container: |
-    {numContainers, plural,
-      =1 {Container}
-      other {Containers}
+    {容器数量, 复数的,
+      =1 {容器}
+      其他 {容器}
     }
   service: |
-    {numServices, plural,
-      =1 {Service}
-      other {Services}
+    {服务数量, 复数的,
+      =1 {服务}
+      其他 {服务}
     }
   sidekick: |
-    {numSidekicks, plural,
-      =1 {Sidekick}
-      other {Sidekicks}
+    {numSidekicks伙伴, 复数的,
+      =1 {Sidekick伙伴}
+      其他 {Sidekicks伙伴}
     }
   add:
-    service: Add Service
-    loadBalancer: Add Load Balancer
-    serviceAlias: Add Service Alias
-    externalService: Add External Service
-    virtualMachine: Add Virtual Machine
+    service: 添加服务
+    loadBalancer: 添加负载平衡器
+    serviceAlias: 添加服务名
+    externalService: 添加外部服务
+    virtualMachine: 添加虚拟机
   table:
     dataTitle:
-      state: 'State:'
-      serviceName: 'Service Name:'
-      details: 'Details:'
-      containers: 'Containers:'
-      actions: 'Actions:'
+      state: '状态:'
+      serviceName: '服务名称:'
+      details: '详情:'
+      containers: '容器:'
+      actions: '操作:'
 
 
 storagePoolSection:
-  outputs: Outputs
-  readOnly: "(read-only)"
+  outputs: 输出
+  readOnly: "(只读)"
   hosts:
-    header: Hosts
-    none: No Hosts
+    header: 主机
+    none: 无主机
   volumes:
-    header: Volumes
-    add: Add Volume
-    none: No Volumes
+    header: 卷
+    add: 添加卷
+    none: 无卷
   models:
     table:
       header:
-        activeMounts: 'Mounts (Container: Path)'
+        activeMounts: '挂载(容器: 路径)'
 
 svgServiceContainer:
-  sidekicks: Sidekicks
+  sidekicks: Sidekicks伙伴
 
 swarm:
   containerSection:
-    state: State
-    name: Container Name
-    image: Image
-    none: No Containers
+    state: 状态
+    name: 容器名称
+    image: 图片
+    none: 无容器
   serviceSection:
-    state: State
-    name: Service Name
-    ports: Ports
-    containers: Containers
-    none: No Services
+    state: 状态
+    name: 服务名称
+    ports: 接口
+    containers: 容器
+    none: 无服务
 
 tooltipLink:
-  list: List
-  linkGraph: Link Graph
-  composeYaml: Compose YAML
+  list: 列表
+  linkGraph: 链接图
+  composeYaml: 撰写YAML
 
 tooltipWarning:
-  notConfigured: Access Control Not Configured
-  dismiss: Dismiss
+  notConfigured: 访问控制未配置
+  dismiss: 驳回
 
 viewEditDescription:
   form:
     name:
-      placeholder: e.g. lab
+      placeholder: 例如实验室
     description:
-      placeholder: e.g. Environment for developer experimentation
+      placeholder: 例如实验开发人员的环境
 
 viewEditProject:
   showEdit:
-    edit: "Edit Environment:"
-    add: Add Environment
-    orchestration: Container Orchestration
-    formControl: Access Control
-  header: "Environment:"
-  description: Description
+    edit: "编辑环境:"
+    add: 添加环境
+    orchestration: 容器业务流程
+    formControl: 访问控制
+  header: "环境:"
+  description: 描述
   helpBlock: |
-    Access Control is not enabled.<br/>
-    Anybody with access to the API/UI acts as an admin and will be able to use any environment.
+    访问控制未启用。<br/>
+    作为一个管理员任何人可以访问接口/用户界面并且能够使用任何环境。
   virtualMachine:
-    label: Virtual Machine Support
+    label: 虚拟机支持
     subtext: |
-      Requires hosts that have the <a href="https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine" target="_blank">KVM</a> kernel module loaded.
+      要求主机有<a href="https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine" target="_blank">KVM</a>内核模块加载。
 
 
 vmConsole:
-  header: "Console:"
-  protip: "ProTip: Hold the {alternateLabel} key when opening shell access to launch a new window."
-  canvas: Canvas not supported.
+  header: "控制台:"
+  protip: "专业提示：打开shell访问推出一个新的窗口时，按住{alternatelabel}键。"
+  canvas: 不支持画布.
   footerActions:
-    buttonSend: Send Ctrl-Alt-Delete
-    buttonCancel: Close
+    buttonSend: 发送Ctrl+Alt+Delete
+    buttonCancel: 关闭
 
 volumeRow:
   activeMounts:
-    readOnly: "(read-only)"
+    readOnly: "(只读)"
 ##############################
 # Mixins
 ##############################
 containerChoices:
-  hostGroup: "Host: {name}"
-  hostGroupWithState: "Host: {name} ({state})"
-  unknownHost: "Host: ???"
-  containerOption: "{name}"
-  containerOptionWithState: "{name} ({state})"
+  hostGroup: "主机: {名称}"
+  hostGroupWithState: "主机: {名称} ({状态})"
+  unknownHost: "主机: ???"
+  containerOption: "{名称}"
+  containerOptionWithState: "{名称} ({状态})"
 
 driver:
-  multiHostNames: "Hosts will be named <b>{first}</b> &mdash; <b>{last}</b>"
+  multiHostNames: "主机将被命名为<b>{第一个}</b> &mdash; <b>{最后一个}</b>"
 
 ##############################
 # Services
 ##############################
 allServices:
-  stackGroup: "Stack: {name}"
-  noName: "(Stack: {id})"
+  stackGroup: "服务栈: {名称}"
+  noName: "(服务栈: {id})"
 
 ##############################
 # Utils
@@ -2415,101 +2415,104 @@ allServices:
 # Navigation
 ##############################
 nav:
-  srToggleNav: Toggle Navigation
-  srToggleDropdown: Toggle Dropdown
+  srToggleNav: 切换导航
+  srToggleDropdown: 切换下拉
   environment:
-    label: Environment
-    all: All Environments
-    your: Your Environments
-    selected: Selected Environment
-    manage: Manage Environments
+    label: 环境
+    all: 所有环境
+    your: 你的环境
+    selected: 选中的环境
+    manage: 管理环境
   namespace:
-    label: Namespace
-    manage: Manage Namespaces
+    label: 命名空间
+    manage: 管理命名空间
   k8s:
     tab: Kubernetes
-    services: Services
-    rcs: Replication Controllers
+    services: 服务
+    rcs: 复制控制器
     pods: Pods
+
+
+
     cli: Kubectl
-    system: System
+    system: 系统
   swarm:
     tab: Swarm
-    projects: Projects
-    services: Services
-    cli: CLI
-    system: System
+    projects: 项目
+    services: 服务
+    cli: 命令行界面
+    system: 系统
   mesos:
     tab: Mesos
-    web: Overview
-    system: System
+    web: 概述
+    system: 系统
   cattle:
-    tab: Stacks
-    all: All
-    user: User
-    system: System
+    tab: 服务栈
+    all: 所有
+    user: 用户
+    system: 系统
   catalog:
-    tab: Catalog
-    all: All
-    library: Library
+    tab: 应用市场
+    all: 所有
+    library: 库
   infra:
-    tab: Infrastructure
-    hosts: Hosts
-    containers: Containers
-    vms: Virtual Machines
-    storagePools: Storage Pools
-    certificates: Certificates
-    registries: Registries
+    tab: 基础设施
+    hosts: 主机
+    containers: 容器
+    vms: 虚拟机
+    storagePools: 存储池
+    certificates: 证书
+    registries: 登记
   admin:
-    tab: Admin
-    audit: Audit Log
-    processes: Processes
-    accounts: Accounts
-    access: Access Control
-    settings: Settings
-    ha: High-Availability
+    tab: 管理员
+    audit: 审计日志
+    processes: 过程
+    accounts: 账户
+    access: 访问控制
+    settings: 设置
+    ha: 高可用性
   api:
-    tab: API
+    tab: 应用程序接口
   user:
-    label: "User Menu: {username}"
-    logout: Log Out
-    yourAccount: Your Account
-    changePassword: Change Password
-    theme: Theme
-    themeLight: Light
-    themeAuto: Auto
-    themeDark: Dark
+    label: "用户菜单: {用户名}"
+    logout: 注销
+    yourAccount: 您的账户
+    changePassword: 修改密码
+    theme: 主题
+    themeLight: 明亮
+    themeAuto: 自动
+    themeDark: 黑暗
 
 ##############################
 # Resource Actions
 ##############################
 action:
-  activate: Activate
-  cancelUpgrade: Cancel Upgrade
-  cancelRollback: Cancel Rollback
-  clone: Clone
-  console: Open Console
-  deactivate: Deactivate
-  edit: Edit
-  execute: Execute Shell
-  exportConfig: Export Config
-  finishUpgrade: Finish Upgrade
-  logs: View Logs
-  machineConfig: Machine Config
-  purge: Purge
-  remove: Delete
-  restart: Restart
-  restore: Restore
-  retry: Retry
-  rollback: Rollback
-  setDefault: Set as Default
-  start: Start
-  startServices: Start Services
-  stop: Stop
-  stopServices: Stop Services
-  switchNamespace: Switch to this Namespace
-  switchEnvironment: Switch to this Envrionment
-  upgrade: Upgrade
-  viewConfig: View Config
-  viewGraph: View Graph
-  viewInApi: View in API
+  activate: 激活
+  cancelUpgrade: 取消升级
+  cancelRollback: 取消回滚
+  clone: 复制
+  console: 打开控制台
+  deactivate: 停用
+  edit: 编辑
+  execute: 执行Shell
+  exportConfig: 导出配置
+  finishUpgrade: 完成升级
+  logs: 查看日志
+  machineConfig: 机器配置
+  purge: 清除
+  remove: 删除
+  restart: 重新启动
+  restore: 恢复
+  retry: 重试
+  rollback: 回滚
+  setDefault: 设置为默认值
+  start: 开始
+  startServices: 启动服务
+  stop: 停止
+  stopServices: 停止服务
+  switchNamespace: 切换到该命名空间
+  switchEnvironment: 切换到该环境
+  upgrade: 升级
+  viewConfig: 查看配置
+  viewGraph: 查看图
+  viewInApi: 查看应用程序接口
